@@ -6,7 +6,6 @@ pluginManagement {
     }
 }
 dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
         google()
         mavenCentral()
@@ -14,30 +13,3 @@ dependencyResolutionManagement {
 }
 rootProject.name = "ReTikTok"
 include ':app'
-```
-
-Commit it.
-
----
-
-**File 2 — Add file → Create new file**
-Filename: `gradle.properties`
-```
-android.useAndroidX=true
-android.enableJetifier=true
-org.gradle.jvmargs=-Xmx2048m
-```
-
-Commit it.
-
----
-
-**File 3 — Add file → Create new file**
-Filename: `gradle/wrapper/gradle-wrapper.properties`
-```
-distributionBase=GRADLE_USER_HOME
-distributionPath=wrapper/dists
-distributionUrl=https\://services.gradle.org/distributions/gradle-8.7-bin.zip
-networkTimeout=10000
-zipStoreBase=GRADLE_USER_HOME
-zipStorePath=wrapper/dists
